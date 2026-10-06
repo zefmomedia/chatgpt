@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zefmo — Creative Media Studio</title>
+  <meta name="description" content="Zefmo is a creative media studio crafting brands, content and digital experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23111'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='18' fill='white' text-anchor='middle'>Z</text></svg>">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">zefmo<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-small">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Creative media studio</p>
+        <h1>We make brands<br>people remember.</h1>
+        <p class="lead">Zefmo is a small, focused team crafting identities, content and digital experiences — designed with clarity, built to last.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Start a project</a>
+          <a href="#work" class="link-arrow">See our work →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2>What we do</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <span class="num">01</span>
+            <h3>Brand Identity</h3>
+            <p>Strategy, naming, logos and visual systems that give your brand a clear, consistent voice.</p>
+          </article>
+          <article class="card reveal">
+            <span class="num">02</span>
+            <h3>Content &amp; Media</h3>
+            <p>Photo, video and motion content made for social, campaigns and everything in between.</p>
+          </article>
+          <article class="card reveal">
+            <span class="num">03</span>
+            <h3>Web &amp; Digital</h3>
+            <p>Fast, beautiful websites and digital products that turn visitors into customers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2>Recent projects</h2>
+        </div>
+        <div class="grid grid-2">
+          <a href="#" class="project reveal">
+            <div class="thumb thumb-1"></div>
+            <div class="project-meta"><h3>Northwind Coffee</h3><span>Brand Identity</span></div>
+          </a>
+          <a href="#" class="project reveal">
+            <div class="thumb thumb-2"></div>
+            <div class="project-meta"><h3>Lumen Studio</h3><span>Website</span></div>
+          </a>
+          <a href="#" class="project reveal">
+            <div class="thumb thumb-3"></div>
+            <div class="project-meta"><h3>Atlas Outdoors</h3><span>Campaign</span></div>
+          </a>
+          <a href="#" class="project reveal">
+            <div class="thumb thumb-4"></div>
+            <div class="project-meta"><h3>Field Notes</h3><span>Video Series</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Simple ideas,<br>carefully made.</h2>
+        </div>
+        <div>
+          <p class="lead">We believe great creative work starts with listening. We partner closely with founders and teams to understand what matters, then strip away everything that doesn't.</p>
+          <ul class="stats">
+            <li><strong>120+</strong><span>Projects delivered</span></li>
+            <li><strong>40+</strong><span>Happy clients</span></li>
+            <li><strong>8</strong><span>Years in business</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-dark">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Have a project in mind?</h2>
+          <p class="lead">Tell us a little about it and we'll get back to you within two business days.</p>
+          <a href="mailto:creative@zefmo.com" class="contact-email">creative@zefmo.com</a>
+        </div>
+        <form class="form" id="contact-form">
+          <label>Name<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Project details<textarea name="message" rows="4" required></textarea></label>
+          <button type="submit" class="btn btn-light">Send message</button>
+          <p class="form-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Zefmo</span>
+      <nav>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Behance</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
